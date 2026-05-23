@@ -7,14 +7,14 @@
 在使用前，需要先从 FanVPN 的 Chrome 扩展程序的安装目录中获取以下信息：
 
 1. **获取密钥 (`PRIVATE_KEY_PEM`)**
-   - 在扩展程序文件夹中找到 `background.js` 文件。
-   - 搜索 `PRIVATE_KEY_PEM`，复制其对应的 PEM 格式私钥（我们已临时内置了一个）。
-   - 将复制的私钥填入到 `decryptFanVPN.js` 中的 `PRIVATE_KEY` 变量中。
+   - 在扩展程序文件夹中找到 `background.js` 文件
+   - 搜索 `PRIVATE_KEY_PEM`，复制其对应的 PEM 格式私钥（我们已临时内置了一个
+   - 将复制的私钥填入到 `decryptFanVPN.js` 中的 `PRIVATE_KEY` 变量中
 
 2. **获取密文 (`CONFIG_URLS`)**
-   - 在 `background.js` 中搜索 `CONFIG_URLS`。
-   - 从中提取包含加密节点配置的原始文件 URL 组（如 https://www.githubip.xyz/config.json）。
-   - 请求该 URL 即可获取包含 `key`、`iv` 和 `data` 字段的加密配置对象（`configObj`）。
+   - 在 `background.js` 中搜索 `CONFIG_URLS`
+   - 从中提取包含加密节点配置的原始文件 URL 组（如 https://www.githubip.xyz/config.json
+   - 请求该 URL 即可获取包含 `key`、`iv` 和 `data` 字段的加密配置对象（`configObj`
 
 ## 调用示例
 
