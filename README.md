@@ -14,7 +14,7 @@
 2. **获取密文 (`CONFIG_URLS`)**
    - 在 `background.js` 中搜索 `CONFIG_URLS`
    - 从中提取包含加密节点配置的原始文件 URL 组（如 https://www.githubip.xyz/config.json
-   - 请求该 URL 即可获取包含 `key`、`iv` 和 `data` 字段的加密配置对象（`configObj`
+   - 请求该 URL 即可获取包含 `key`、`iv` 和 `data` 字段的加密配置对象 `configObj`
 
 ## 调用示例
 
